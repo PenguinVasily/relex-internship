@@ -131,7 +131,7 @@ public class NumberService {
         return result;
     }
 
-    @Cacheable("result_#path_max")
+    @Cacheable("result_#path_incr_sequence")
     public List getIncreasingSequence(String path) throws IOException {
         File file = this.getFile(path);
         List result = new ArrayList<>();
